@@ -12,7 +12,7 @@ return [
     'form' => ['VanController', 'add',],
     'result' => ['VanController', 'list',],
     'items/edit' => ['ItemController', 'edit', ['id']],
-    'items/show' => ['ItemController', 'show', ['id']],
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
+    'show' => ['ResultsController', 'index']
 ];

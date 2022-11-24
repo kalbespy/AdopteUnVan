@@ -1,0 +1,25 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+	<div class="main-container">
+		<h1>You have a match !!</h1>
+		<div class="van-list" id="van-list">
+			<div class="card text-center">
+				<div class="card-body">
+					<h5 class="card-title">{{wine.type}}</h5>
+					<img src="{{van.image}}" class="img-fluid" alt="image de van">
+					<ul>
+						<li>Nombre de places :
+						</li>
+					</ul>
+				</div>
+				<div class="card-footer">
+					Les caractéristiques
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+{% endblock %}
