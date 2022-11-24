@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Model\VanManager;
 
-
 class VanController extends AbstractController
 {
     /**
