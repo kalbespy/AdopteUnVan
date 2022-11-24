@@ -1,63 +1,33 @@
--- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
---
--- Client :  localhost
--- Généré le :  Jeu 26 Octobre 2017 à 13:53
--- Version du serveur :  5.7.19-0ubuntu0.16.04.1
--- Version de PHP :  7.0.22-0ubuntu0.16.04.1
+DROP DATABASE IF EXISTS adopt_a_van;
+CREATE DATABASE adopt_a_van;
+USE adopt_a_van;
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+DROP TABLE IF EXISTS van;
+CREATE TABLE van (
+id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+type VARCHAR(20),
+shower bool,
+kitchen bool,
+toilet bool,
+solar_panel bool,
+water_reserve bool,
+seats int,
+size float,
+image VARCHAR(255),
+lien1 VARCHAR(255),
+lien2 VARCHAR(255),
+lien3 VARCHAR(255),
+description TEXT(1000)
+);
 
+INSERT INTO van VALUES
+(1, 'roof_tent', false, false, false, false, false, 2, 1.9, 'assets/images/rooftent.jpg', 'link1', 'link2', 'link3', "Le moyen le plus simple et le moins cher pour partir à l'aventure!"),
+(2, 'combi', false, false, false, false, false, 3, 3, 'assets/images/combi.jpg', 'link1', 'link2', 'link3', "Synonyme de liberté et de voyage, le combi fait rêver les collectionneurs nostalgiques."),
+(3, 'simple_van', false, false, false, false, false, 3, 2.5, 'assets/images/simplevan.jpg', 'link1', 'link2', 'link3', "Pour ceux qui n'ont pas besoin de beaucoup de confort."),
+(4, 'camper_van', false, false, true, true, true, 3, 3, 'assets/images/campervan.jpg', 'link1', 'link2', 'link3', "Le bon compromis entre la voiture et le camping-car."),
+(5, 'fourgon', true, true, true, true, true, 5, 3.7, 'assets/images/fourgon.jped', 'link1', 'link2', 'link3', "Personnalisez le à votre goût."),
+(6, 'camping_car', true, true, true, true, true, 5, 6.5, 'assets/images/camping_car.jpg', 'link1', 'link2', 'link3', "Pour voyager tout comfort."),
+(7, 'adventurer', false, false, false, true, true, 3, 1.9, 'assets/images/adventurer.jpg', 'link1', 'link2', 'link3', "Pour explorer les zones géographiques reculées."),
+(8, 'tour_bus', true, true, true, true, true, 10, 1.9, 'assets/images/tourbus.jpg', 'link1', 'link2', 'link3', "Pour ceux qui ont vraiment besoin d'espace. ");
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de données :  `simple-mvc`
---
-
--- --------------------------------------------------------
-
---
--- Structure de la table `item`
---
-
-CREATE TABLE `item` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `item`
---
-
-INSERT INTO `item` (`id`, `title`) VALUES
-(1, 'Stuff'),
-(2, 'Doodads');
-
---
--- Index pour les tables exportées
---
-
---
--- Index pour la table `item`
---
-ALTER TABLE `item`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `item`
---
-ALTER TABLE `item`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+SELECT * FROM van;
