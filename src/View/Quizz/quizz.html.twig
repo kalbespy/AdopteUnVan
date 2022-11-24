@@ -1,0 +1,66 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+	<div class="row">
+		<h1 class="text-center p-0 mt-5">Questions :
+		</h1>
+	</div>
+
+	<section class="container mb-5">
+		<div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4">
+			<div class="col">
+				<div class="card shadow bg-body rounded" style="width: 18rem;">
+					<img src="https://picsum.photos/id/1011/300/200" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text d-none d-lg-block"></p>
+						<div class="d-flex flex-column">
+							<a href=" #" class="btn btn-primary">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card shadow bg-body rounded" style="width: 18rem;">
+					<img src="https://picsum.photos/id/1035/300/200" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title" id="check"></h5>
+						<p class="card-text d-none d-lg-block"></p>
+						<div class="d-flex flex-column">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="q2" id="flexRadioDefault1" value="2">
+								<label class="form-check-label" for="q2"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class=" col">
+				<div class="card shadow bg-body rounded" style="width: 18rem;">
+					<img src="https://picsum.photos/id/1015/300/200" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"></h5>
+						<p class="card-text d-none d-lg-block"></p>
+						<div class="d-flex flex-column">
+							<a href="#" class="btn btn-primary">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card shadow bg-body rounded" style="width: 18rem;">
+					<img src="https://picsum.photos/id/103/300/200" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title"></h5>
+						<p class="card-text d-none d-lg-block"></p>
+						<div class="d-flex flex-column">
+							<a href="#" class="btn btn-primary">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -11,10 +11,14 @@
     box-sizing: border-box;
 }
 
-html body {
+#check {
+    background-color: var(--secondary-color);
+}
+
+/* html body {
     height: 100vh;
 
-}
+} */
 
 /* CSS */
 .button-33 {
@@ -55,7 +59,7 @@ body {
 }
 
 
-.card {
+.adoptecard {
     position: absolute;
     border-radius: 1.5em;
     min-width: 400px;
