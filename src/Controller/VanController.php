@@ -265,6 +265,10 @@ class VanController extends AbstractController
 
         $vanManager = new VanManager();
         $van = $vanManager->selectOneById($id);
+
+        var_dump($vans);
+        var_dump($van);
+
         }
         return $this->twig->render('Quiz/quiz.html.twig');
     }
