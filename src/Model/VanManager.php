@@ -6,6 +6,6 @@ use PDO;
 
 class VanManager extends AbstractManager
 {
-    public const TABLE = 'item';
+    public const TABLE = 'van';
     
 }
