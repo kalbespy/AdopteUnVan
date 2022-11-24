@@ -1,3 +1,17 @@
+:root {
+    --background-color: #F5C6AA;
+    --primary-color: #3D191B;
+    --secondary-color: #D88124;
+    --third-color: #92C9E8;
+    --font-family: 'Sono', sans-serif;
+}
+
 body {
-    color: #f76c6c;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+}
+
+@font-face {
+    font-family: 'Sono';
+    src: url(/asssets/css/fonts/Sono-VariableFont_MONO,wght.ttf), format('.ttf');
 }
