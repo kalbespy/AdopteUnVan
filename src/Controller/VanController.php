@@ -29,6 +29,8 @@ class VanController extends AbstractController
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $answers = array_map('trim', $_POST);
 
+            var_dump($answers);
+
             switch ($answers['q1']) {
                 case 1:
                     $A += 2;
@@ -157,11 +159,11 @@ class VanController extends AbstractController
 
             switch ($answers['q4']) {
                 case 1:
-                    $A+=2;
+                    $A+=3;
                     $B++;
                     $C++;
                     $D++;
-                    $E-=2;
+                    $E-=3;
                     $F;
                     $G+=2;
                     $H--;
@@ -171,7 +173,7 @@ class VanController extends AbstractController
                     $B--;
                     $C--;
                     $D--;
-                    $E--;
+                    $E-=2;
                     $F+=2;
                     $G;
                     $H++;
@@ -183,11 +185,11 @@ class VanController extends AbstractController
                     $D++;
                     $E++;
                     $F+=2;
-                    $G+=2;
+                    $G+=3;
                     $H+=2;
                     break;
                 case 4:
-                    $A+=2;
+                    $A+=3;
                     $B+=2;
                     $C++;
                     $D;
@@ -267,8 +269,9 @@ class VanController extends AbstractController
 
         var_dump($vans);
         var_dump($van);
+        header('location: /results');
 
         }
-        return $this->twig->render('Quiz/quiz.html.twig');
+        return $this->twig->render('Quizz/quizz.html.twig');
     }
 }
