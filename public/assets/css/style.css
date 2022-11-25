@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+.quizzh3 {
+    margin-top: 150px;
+}
+
 #check {
     background-color: var(--secondary-color);
 }
@@ -118,7 +122,7 @@ body {
     width: 10em;
 }
 
-.scroller > span {
+.scroller>span {
     position: absolute;
     top: 0;
     animation: slide 8s infinite;
@@ -149,6 +153,7 @@ body {
     width: 75vw;
     font-weight: bold;
 }
+
 .card-result {
     background-color: rgba(248, 230, 211, 0.9);
 }
@@ -158,6 +163,14 @@ body {
 }
 ul {
     list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.heart {
+    color: red;
 }
 
 @keyframes slide {
