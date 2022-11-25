@@ -29,7 +29,11 @@ class VanController extends AbstractController
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $answers = array_map('trim', $_POST);
-
+            $errors = [];
+            if (!isset($answers['q1']) || !isset($answers['q2']) || !isset($answers['q3']) || !isset($answers['q4']) || !isset($answers['q5'])) {
+                $errors['unset'] = "Vous n'avez pas répondu à toutes les questions";
+                return $this->twig->render('Quizz/quizz.html.twig', ['errors' => $errors]);
+            }
             switch ($answers['q1']) {
                 case 1:
                     $A += 2;
@@ -262,6 +266,8 @@ class VanController extends AbstractController
             if (max($vans) == $campingCar) $this->id = 6;
             if (max($vans) == $adventurer) $this->id = 7;
             if (max($vans) == $tourBus) $this->id = 8;
+
+
 
             $vanManager = new VanManager();
             $van = $vanManager->selectOneById($this->id);

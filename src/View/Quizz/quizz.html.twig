@@ -9,380 +9,386 @@
 			<h2 class="quizzh1 d-flex justify-content-center p-4 mt-5 mb-5 text-center">
 				Afin de le découvrir, répondez à 5 questions en choisissant l'image qui vous correspond le mieux !
 			</h2>
+			{% if errors %}
+				<div class="d-flex justify-content-center">
+					<h2 class="bg-danger vw-75 error fw-bold d-flex justify-content-center p-4 mt-5 mb-5 text-center">{{errors.unset}}
+					</h2>
+				{% endif %}
+			</div>
 		</div>
-	</div>
 
 
-	<div class class="container-fluid text-center">
-		<div class="row d-flex justify-content-center">
+		<div class class="container-fluid text-center">
+			<div class="row d-flex justify-content-center">
 
 
-			<form action="" method="POST">
-				<fieldset>
-					<section class="container mb-5">
-						<div
-							class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4">
+				<form action="" method="POST">
+					<fieldset>
+						<section class="container mb-5">
+							<div
+								class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4">
 
-							<!-- Question 1-->
+								<!-- Question 1-->
 
-							<h3 class="quizzh3 p-2 m-2">Question 1. Le meilleur endroit pour vous, ça serait :
-							</h3>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/jungle.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q1" class="custom-control-input" value="1">
-													<label class="custom-control-label" for="q1">La jungle</label>
+								<h3 class="quizzh3 p-2 m-2">Question 1. Le meilleur endroit pour vous, ça serait :
+								</h3>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/jungle.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q1" class="custom-control-input" value="1">
+														<label class="custom-control-label" for="q1">La jungle</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/ocean.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q1" class="custom-control-input" value="2">
-													<label class="custom-control-label" for="q1">L'océan</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/ocean.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q1" class="custom-control-input" value="2">
+														<label class="custom-control-label" for="q1">L'océan</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/brandon-brown-OTiph037nLc-unsplash.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q1" class="custom-control-input" value="3">
-													<label class="custom-control-label" for="q1">La route 66</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/brandon-brown-OTiph037nLc-unsplash.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q1" class="custom-control-input" value="3">
+														<label class="custom-control-label" for="q1">La route 66</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="assets/images/bordsdeau.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q1" class="custom-control-input" value="4">
-													<label class="custom-control-label" for="q1">
-														Bord de rivière</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="assets/images/bordsdeau.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q1" class="custom-control-input" value="4">
+														<label class="custom-control-label" for="q1">
+															Bord de rivière</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<!-- Question 2-->
+								<!-- Question 2-->
 
-							<h3 class="quizzh3 p-2 m-2">Question 2. De quoi est composé votre tribu ?
-							</h3>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/child.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q2" class="custom-control-input" value="1">
-													<label class="custom-control-label" for="q2">Avec enfant</label>
+								<h3 class="quizzh3 p-2 m-2">Question 2. De quoi est composé votre tribu ?
+								</h3>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/child.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q2" class="custom-control-input" value="1">
+														<label class="custom-control-label" for="q2">Avec enfant</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/solo.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q2" class="custom-control-input" value="2">
-													<label class="custom-control-label" for="q2">Solitaire</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/solo.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q2" class="custom-control-input" value="2">
+														<label class="custom-control-label" for="q2">Solitaire</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/old.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q2" class="custom-control-input" value="3">
-													<label class="custom-control-label" for="q2">Des vieux</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/old.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q2" class="custom-control-input" value="3">
+														<label class="custom-control-label" for="q2">Des vieux</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="assets/images/couple.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q2" class="custom-control-input" value="4">
-													<label class="custom-control-label" for="q2">
-														Couple</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="assets/images/couple.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q2" class="custom-control-input" value="4">
+														<label class="custom-control-label" for="q2">
+															Couple</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<!-- Question 3-->
+								<!-- Question 3-->
 
-							<h3 class="quizzh3 p-2 m-2">Question 3. Si vous deviez choisir un objet, quel serait-il ?
-							</h3>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/picnic.jpg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q3" class="custom-control-input" value="1">
-													<label class="custom-control-label" for="q3">Accessoire pour pique nique</label>
+								<h3 class="quizzh3 p-2 m-2">Question 3. Si vous deviez choisir un objet, quel serait-il ?
+								</h3>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/picnic.jpg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q3" class="custom-control-input" value="1">
+														<label class="custom-control-label" for="q3">Accessoire pour pique nique</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/tv.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q3" class="custom-control-input" value="2">
-													<label class="custom-control-label" for="q3">TV plasma 4k Dolby Surround</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/tv.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q3" class="custom-control-input" value="2">
+														<label class="custom-control-label" for="q3">TV plasma 4k Dolby Surround</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/planchesurf.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q3" class="custom-control-input" value="3">
-													<label class="custom-control-label" for="q3">Planche de surf</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/planchesurf.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q3" class="custom-control-input" value="3">
+														<label class="custom-control-label" for="q3">Planche de surf</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="assets/images/hippie.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q3" class="custom-control-input" value="4">
-													<label class="custom-control-label" for="q3">Vieux habbits de hippie</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="assets/images/hippie.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q3" class="custom-control-input" value="4">
+														<label class="custom-control-label" for="q3">Vieux habbits de hippie</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<!-- Question 4-->
+								<!-- Question 4-->
 
-							<h3 class="quizzh3 p-2 m-2">Question 4. Parmi ces animaux, lequel vous représente le mieux ?
-							</h3>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/lion.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q4" class="custom-control-input" value="1">
-													<label class="custom-control-label" for="q4">Le lion</label>
+								<h3 class="quizzh3 p-2 m-2">Question 4. Parmi ces animaux, lequel vous représente le mieux ?
+								</h3>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/lion.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q4" class="custom-control-input" value="1">
+														<label class="custom-control-label" for="q4">Le lion</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/paresseux.png" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q4" class="custom-control-input" value="2">
-													<label class="custom-control-label" for="q4">Le développeur</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/paresseux.png" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q4" class="custom-control-input" value="2">
+														<label class="custom-control-label" for="q4">Le développeur</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/elephant.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q4" class="custom-control-input" value="3">
-													<label class="custom-control-label" for="q4">L'éléphant</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/elephant.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q4" class="custom-control-input" value="3">
+														<label class="custom-control-label" for="q4">L'éléphant</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="assets/images/hiboux.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q4" class="custom-control-input" value="4">
-													<label class="custom-control-label" for="q4">La chouette</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="assets/images/hiboux.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q4" class="custom-control-input" value="4">
+														<label class="custom-control-label" for="q4">La chouette</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<!-- Question 5-->
+								<!-- Question 5-->
 
-							<h3 class="quizzh3 p-2 m-2">Question 5. En cas de petit creux, quel plat choisireriez vous ?
-							</h3>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/sandwich.webp" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q5" class="custom-control-input" value="1">
-													<label class="custom-control-label" for="q5">Le bon vieux dwich</label>
+								<h3 class="quizzh3 p-2 m-2">Question 5. En cas de petit creux, quel plat choisireriez vous ?
+								</h3>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/sandwich.webp" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q5" class="custom-control-input" value="1">
+														<label class="custom-control-label" for="q5">Le bon vieux dwich</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/pates.webp" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q5" class="custom-control-input" value="2">
-													<label class="custom-control-label" for="q5">Les pâtes</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/pates.webp" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q5" class="custom-control-input" value="2">
+														<label class="custom-control-label" for="q5">Les pâtes</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="/assets/images/gastronomic.webp" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q5" class="custom-control-input" value="3">
-													<label class="custom-control-label" for="q5">Le gastro (on se refuse rien...)</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="/assets/images/gastronomic.webp" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q5" class="custom-control-input" value="3">
+														<label class="custom-control-label" for="q5">Le gastro (on se refuse rien...)</label>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
-								<div class="card shadow bg-body rounded" style="width: 18rem;">
-									<img src="assets/images/nouilles.jpeg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title" id="check"></h5>
-										<p class="card-text d-none d-lg-block"></p>
-										<div class="d-flex flex-column">
-											<div class="form-check">
-												<div class="custom-control custom-radio">
-													<input type="radio" name="q5" class="custom-control-input" value="4">
-													<label class="custom-control-label" for="q5">Les nouilles de la flemme</label>
+								<div class="col">
+									<div class="card shadow bg-body rounded" style="width: 18rem;">
+										<img src="assets/images/nouilles.jpeg" class="card-img-top" alt="...">
+										<div class="card-body">
+											<h5 class="card-title" id="check"></h5>
+											<p class="card-text d-none d-lg-block"></p>
+											<div class="d-flex flex-column">
+												<div class="form-check">
+													<div class="custom-control custom-radio">
+														<input type="radio" name="q5" class="custom-control-input" value="4">
+														<label class="custom-control-label" for="q5">Les nouilles de la flemme</label>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -390,17 +396,16 @@
 								</div>
 							</div>
 						</div>
+					</section>
+					<div class="container">
+						<a class="d-flex justify-content-center" href="">
+							<button class="button-34" role=" button" href=" ">Valider</button>
+						</a>
 					</div>
-				</section>
-				<div class="container">
-					<a class="d-flex justify-content-center" href="">
-						<button class="button-34" role=" button" href=" ">Valider</button>
-					</a>
-				</div>
-			</fieldset>
+				</fieldset>
 
-		</div>
-	</form>
-	<div></div>
+			</div>
+		</form>
+		<div></div>
 
-{% endblock %}
+	{% endblock %}

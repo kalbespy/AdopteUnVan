@@ -152,7 +152,10 @@ body {
 .card-result {
     background-color: rgba(248, 230, 211, 0.9);
 }
-
+.error {
+    border-radius: 30px;
+    width: 75vw;
+}
 ul {
     list-style-type: none;
 }
