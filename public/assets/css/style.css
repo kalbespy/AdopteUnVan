@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+.quizzh3 {
+    margin-top: 150px;
+}
+
 #check {
     background-color: var(--secondary-color);
 }
