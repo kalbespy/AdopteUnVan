@@ -8,12 +8,53 @@
 			<div class="card text-center">
 				<div class="card-body">
 
-					<h5 class="card-title">{{wine.type}}</h5>
-					<img src="{{van.image}}" class="img-fluid" alt="image de van">
+					<h5 class="card-title fs-3 fw-bold">{{wine.type}}</h5>
+					<img src="{{van.image}}" class="img-fluid my-3" alt="image de van">
 					<ul>
 						<li>Nombre de places :
+							{{van.seats}}</li>
+						<li>Longueur :
+							{{van.size}}
+							mètres</li>
+						<li>Nombre de places :
+							{{van.seats}}</li>
+						<li>Douche :
+							{% if van.shower %}
+								oui
+							{% else %}
+								non
+							{% endif %}
+						</li>
+						<li>Cuisine :
+							{% if van.kitchen %}
+								oui
+							{% else %}
+								non
+							{% endif %}
+						</li>
+						<li>Toilettes :
+							{% if van.toilet %}
+								oui
+							{% else %}
+								non
+							{% endif %}
+						</li>
+						<li>Panneau solaire :
+							{% if van.solar_panel %}
+								oui
+							{% else %}
+								non
+							{% endif %}
+						</li>
+						<li>Réserve d'eau :
+							{% if van.water_reserve %}
+								oui
+							{% else %}
+								non
+							{% endif %}
 						</li>
 					</ul>
+					<div>{{van.description}}</div>
 				</div>
 				<div class="card-footer">
 					Les caractéristiques
