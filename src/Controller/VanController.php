@@ -6,6 +6,7 @@ use App\Model\VanManager;
 
 class VanController extends AbstractController
 {
+
     /**
      * Display result
      */
@@ -255,20 +256,20 @@ class VanController extends AbstractController
             $vans = [];
             array_push($vans, $roofTent, $combi, $simpleVan, $camperVan, $fourgon, $campingCar, $adventurer, $tourBus);
             
-        if(max($vans) == $roofTent) $id = 1;
-        if(max($vans) == $combi) $id = 2;
-        if(max($vans) == $simpleVan) $id = 3;
-        if(max($vans) == $camperVan) $id = 4;
-        if(max($vans) == $fourgon) $id = 5;
-        if(max($vans) == $campingCar) $id = 6;
-        if(max($vans) == $adventurer) $id = 7;
-        if(max($vans) == $tourBus) $id = 8;
+        if(max($vans) == $roofTent) $this->id = 1;
+        if(max($vans) == $combi) $this->id = 2;
+        if(max($vans) == $simpleVan) $this->id = 3;
+        if(max($vans) == $camperVan) $this->id = 4;
+        if(max($vans) == $fourgon) $this->id = 5;
+        if(max($vans) == $campingCar) $this->id = 6;
+        if(max($vans) == $adventurer) $this->id = 7;
+        if(max($vans) == $tourBus) $this->id = 8;
 
         $vanManager = new VanManager();
-        $van = $vanManager->selectOneById($id);
+        $van = $vanManager->selectOneById($this->id);
 
-        var_dump($vans);
-        var_dump($van);
+        return $this->twig->render('Results/results.html.twig', ['van' => $van,]);
+
         header('location: /results');
 
         }
