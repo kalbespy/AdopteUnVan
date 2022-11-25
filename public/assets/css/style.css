@@ -1,9 +1,9 @@
 :root {
-    --background-color: #F5C6AA;
-    --primary-color: #3D191B;
-    --secondary-color: #D88124;
-    --third-color: #92C9E8;
-    --font-family: 'Sono', sans-serif;
+    --background-color: #f5c6aa;
+    --primary-color: #3d191b;
+    --secondary-color: #d88124;
+    --third-color: #92c9e8;
+    --font-family: "Sono", sans-serif;
 }
 
 * {
@@ -27,10 +27,12 @@
     right: 20%;
     bottom: 5%;
     top: 90%;
-    background-color: #F8E6D3;
+    background-color: #f8e6d3;
     border-radius: 100px;
-    box-shadow: #F8E6D3 0 -25px 18px -14px inset, rgba(3, 6, 4, 0.15) 0 1px 2px, rgba(0, 0, 0, 0.15) 0 2px 4px, rgba(0, 1, 0, 0.15) 0 4px 8px, rgba(3, 4, 4, 0.15) 0 8px 16px, rgba(0, 0, 0, 0.15) 0 16px 32px;
-    color: #3B191A;
+    box-shadow: #f8e6d3 0 -25px 18px -14px inset, rgba(3, 6, 4, 0.15) 0 1px 2px,
+        rgba(0, 0, 0, 0.15) 0 2px 4px, rgba(0, 1, 0, 0.15) 0 4px 8px,
+        rgba(3, 4, 4, 0.15) 0 8px 16px, rgba(0, 0, 0, 0.15) 0 16px 32px;
+    color: #3b191a;
     cursor: pointer;
     display: inline-block;
     padding: 7px 20px;
@@ -47,22 +49,22 @@
 }
 
 .button-33:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0 -25px 18px -14px inset, rgba(0, 0, 0, 0.25) 0 1px 2px, rgba(1, 2, 2, 0.25) 0 2px 4px, rgba(1, 1, 1, 0.25) 0 4px 8px, rgba(3, 7, 4, 0.25) 0 8px 16px, rgba(2, 3, 2, 0.25) 0 16px 32px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 -25px 18px -14px inset,
+        rgba(0, 0, 0, 0.25) 0 1px 2px, rgba(1, 2, 2, 0.25) 0 2px 4px,
+        rgba(1, 1, 1, 0.25) 0 4px 8px, rgba(3, 7, 4, 0.25) 0 8px 16px,
+        rgba(2, 3, 2, 0.25) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
 }
 
 .button-34 {
-    position: absolute;
-    left: 20%;
-    right: 20%;
-    bottom: 5%;
-    top: 90%;
-    background-color: #F8E6D3;
+    width: 50%;
+    background-color: #f8e6d3;
     border-radius: 100px;
-    box-shadow: #F8E6D3 0 -25px 18px -14px inset, rgba(3, 6, 4, 0.15) 0 1px 2px, rgba(0, 0, 0, 0.15) 0 2px 4px, rgba(0, 1, 0, 0.15) 0 4px 8px, rgba(3, 4, 4, 0.15) 0 8px 16px, rgba(0, 0, 0, 0.15) 0 16px 32px;
-    color: #3B191A;
+    box-shadow: #f8e6d3 0 -25px 18px -14px inset, rgba(3, 6, 4, 0.15) 0 1px 2px,
+        rgba(0, 0, 0, 0.15) 0 2px 4px, rgba(0, 1, 0, 0.15) 0 4px 8px,
+        rgba(3, 4, 4, 0.15) 0 8px 16px, rgba(0, 0, 0, 0.15) 0 16px 32px;
+    color: #3b191a;
     cursor: pointer;
-    display: inline-block;
     padding: 7px 20px;
     text-align: center;
     text-decoration: none;
@@ -77,17 +79,19 @@
 }
 
 .button-34:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0 -25px 18px -14px inset, rgba(0, 0, 0, 0.25) 0 1px 2px, rgba(1, 2, 2, 0.25) 0 2px 4px, rgba(1, 1, 1, 0.25) 0 4px 8px, rgba(3, 7, 4, 0.25) 0 8px 16px, rgba(2, 3, 2, 0.25) 0 16px 32px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 -25px 18px -14px inset,
+        rgba(0, 0, 0, 0.25) 0 1px 2px, rgba(1, 2, 2, 0.25) 0 2px 4px,
+        rgba(1, 1, 1, 0.25) 0 4px 8px, rgba(3, 7, 4, 0.25) 0 8px 16px,
+        rgba(2, 3, 2, 0.25) 0 16px 32px;
     transform: scale(1.05) rotate(-1deg);
 }
 
 body {
-    background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2021&q=80');
+    background-image: url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2021&q=80");
     background-position: left;
     background-attachment: fixed;
     background-size: cover;
 }
-
 
 .adoptecard {
     position: absolute;
@@ -100,10 +104,8 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1),
-        0 8px 8px rgba(0, 0, 0, 0.1),
-        0 16px 16px rgba(0, 0, 0, 0.1),
-        0 32px 32px rgba(0, 0, 0, 0.15),
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+        0 16px 16px rgba(0, 0, 0, 0.1), 0 32px 32px rgba(0, 0, 0, 0.15),
         0 64px 64px rgba(0, 0, 0, 0.15);
 }
 
@@ -116,12 +118,11 @@ body {
     width: 10em;
 }
 
-.scroller>span {
+.scroller > span {
     position: absolute;
     top: 0;
     animation: slide 8s infinite;
     font-weight: bold;
-
 }
 
 .quizzh1 {
@@ -132,6 +133,14 @@ body {
     font-weight: bold;
 }
 
+.result-h1 {
+    color: var(--primary-color);
+    border-radius: 30px;
+    background-color: rgba(248, 230, 211, 0.9);
+    width: 40vw;
+
+    font-weight: bold;
+}
 
 .quizzh3 {
     color: var(--primary-color);
@@ -140,19 +149,12 @@ body {
     width: 75vw;
     font-weight: bold;
 }
+.card-result {
+    background-color: rgba(248, 230, 211, 0.9);
+}
 
 ul {
     list-style-type: none;
-}
-
-li {
-    display: inline-block;
-}
-
-
-
-img {
-    width: 300px;
 }
 
 @keyframes slide {
@@ -185,8 +187,11 @@ img {
     }
 }
 
-
 @font-face {
-    font-family: 'Sono';
-    src: url(/asssets/css/fonts/Sono-VariableFont_MONO,wght.ttf), format('.ttf');
+    font-family: "Sono";
+    src: url(/asssets/css/fonts/Sono-VariableFont_MONO,wght.ttf), format(".ttf");
+}
+
+.card {
+    width: 40vw;
 }
