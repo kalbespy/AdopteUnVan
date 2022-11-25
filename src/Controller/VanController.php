@@ -16,7 +16,7 @@ class VanController extends AbstractController
         return $this->twig->render('Result/result.html.twig');
     }
 
-    public function add(): string 
+    public function add(): string
     {
         $A = 0;
         $B = 0;
@@ -29,8 +29,6 @@ class VanController extends AbstractController
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $answers = array_map('trim', $_POST);
-
-            var_dump($answers);
 
             switch ($answers['q1']) {
                 case 1:
@@ -66,9 +64,9 @@ class VanController extends AbstractController
                     $C++;
                     $D++;
                     $E--;
-                    $F-=2;
-                    $G-=2;
-                    $H-=2;
+                    $F -= 2;
+                    $G -= 2;
+                    $H -= 2;
                     break;
             };
 
@@ -79,123 +77,123 @@ class VanController extends AbstractController
                     $C--;
                     $D--;
                     $E++;
-                    $F+=2;
-                    $G+=2;
-                    $H+=2;
+                    $F += 2;
+                    $G += 2;
+                    $H += 2;
                     break;
                 case 2:
-                    $A+=2;
+                    $A += 2;
                     $B++;
-                    $C+=2;
+                    $C += 2;
                     $D++;
                     $E;
                     $F;
                     $G--;
-                    $H-=2;
+                    $H -= 2;
                     break;
                 case 3:
-                    $A-=2;
+                    $A -= 2;
                     $B;
                     $C--;
                     $D--;
                     $E++;
                     $F++;
-                    $G+=2;
-                    $H+=2;
+                    $G += 2;
+                    $H += 2;
                     break;
                 case 4:
                     $A++;
-                    $B+=2;
-                    $C+=2;
-                    $D+=2;
+                    $B += 2;
+                    $C += 2;
+                    $D += 2;
                     $E--;
                     $F;
                     $G++;
-                    $H-=2;
+                    $H -= 2;
                     break;
             };
 
             switch ($answers['q3']) {
                 case 1:
-                    $A+=2;
+                    $A += 2;
                     $B++;
                     $C++;
                     $D++;
                     $E--;
-                    $F-=2;
-                    $G-=2;
-                    $H-=2;
+                    $F -= 2;
+                    $G -= 2;
+                    $H -= 2;
                     break;
                 case 2:
-                    $A-=2;
+                    $A -= 2;
                     $B--;
                     $C++;
                     $D++;
                     $E++;
-                    $F+=2;
+                    $F += 2;
                     $G;
-                    $H+=2;
+                    $H += 2;
                     break;
                 case 3:
-                    $A+=2;
-                    $B+=2;
+                    $A += 2;
+                    $B += 2;
                     $C++;
                     $D++;
                     $E--;
                     $F--;
                     $G--;
-                    $H-=2;
+                    $H -= 2;
                     break;
                 case 4:
                     $A--;
-                    $B+=2;
+                    $B += 2;
                     $C--;
                     $D;
                     $E--;
-                    $F-=2;
+                    $F -= 2;
                     $G++;
-                    $H-=2;
+                    $H -= 2;
                     break;
             };
 
             switch ($answers['q4']) {
                 case 1:
-                    $A+=3;
+                    $A += 3;
                     $B++;
                     $C++;
                     $D++;
-                    $E-=3;
+                    $E -= 3;
                     $F;
-                    $G+=2;
+                    $G += 2;
                     $H--;
                     break;
                 case 2:
-                    $A-=2;
+                    $A -= 2;
                     $B--;
                     $C--;
                     $D--;
-                    $E-=2;
-                    $F+=2;
+                    $E -= 2;
+                    $F += 2;
                     $G;
                     $H++;
                     break;
                 case 3:
-                    $A-=2;
+                    $A -= 2;
                     $B--;
                     $C++;
                     $D++;
                     $E++;
-                    $F+=2;
-                    $G+=3;
-                    $H+=2;
+                    $F += 2;
+                    $G += 3;
+                    $H += 2;
                     break;
                 case 4:
-                    $A+=3;
-                    $B+=2;
+                    $A += 3;
+                    $B += 2;
                     $C++;
                     $D;
-                    $E-=2;
-                    $F-=2;
+                    $E -= 2;
+                    $F -= 2;
                     $G;
                     $H--;
                     break;
@@ -204,41 +202,41 @@ class VanController extends AbstractController
             switch ($answers['q5']) {
                 case 1:
                     $A++;
-                    $B+=2;
-                    $C+=2;
+                    $B += 2;
+                    $C += 2;
                     $D++;
                     $E++;
                     $F--;
                     $G--;
-                    $H-=2;
+                    $H -= 2;
                     break;
                 case 2:
                     $A++;
-                    $B-=2;
+                    $B -= 2;
                     $C;
-                    $D+=2;
-                    $E+=2;
+                    $D += 2;
+                    $E += 2;
                     $F++;
                     $G++;
                     $H--;
                     break;
                 case 3:
-                    $A-=2;
-                    $B-=2;
-                    $C-=2;
+                    $A -= 2;
+                    $B -= 2;
+                    $C -= 2;
                     $D--;
                     $E--;
-                    $F+=2;
+                    $F += 2;
                     $G++;
-                    $H+=2;
+                    $H += 2;
                     break;
                 case 4:
-                    $A+=2;
-                    $B+=2;
-                    $C+=2;
-                    $D-=2;
+                    $A += 2;
+                    $B += 2;
+                    $C += 2;
+                    $D -= 2;
                     $E--;
-                    $F-=2;
+                    $F -= 2;
                     $G++;
                     $H++;
                     break;
@@ -255,23 +253,20 @@ class VanController extends AbstractController
 
             $vans = [];
             array_push($vans, $roofTent, $combi, $simpleVan, $camperVan, $fourgon, $campingCar, $adventurer, $tourBus);
-            
-        if(max($vans) == $roofTent) $this->id = 1;
-        if(max($vans) == $combi) $this->id = 2;
-        if(max($vans) == $simpleVan) $this->id = 3;
-        if(max($vans) == $camperVan) $this->id = 4;
-        if(max($vans) == $fourgon) $this->id = 5;
-        if(max($vans) == $campingCar) $this->id = 6;
-        if(max($vans) == $adventurer) $this->id = 7;
-        if(max($vans) == $tourBus) $this->id = 8;
 
-        $vanManager = new VanManager();
-        $van = $vanManager->selectOneById($this->id);
+            if (max($vans) == $roofTent) $this->id = 1;
+            if (max($vans) == $combi) $this->id = 2;
+            if (max($vans) == $simpleVan) $this->id = 3;
+            if (max($vans) == $camperVan) $this->id = 4;
+            if (max($vans) == $fourgon) $this->id = 5;
+            if (max($vans) == $campingCar) $this->id = 6;
+            if (max($vans) == $adventurer) $this->id = 7;
+            if (max($vans) == $tourBus) $this->id = 8;
 
-        return $this->twig->render('Results/results.html.twig', ['van' => $van,]);
+            $vanManager = new VanManager();
+            $van = $vanManager->selectOneById($this->id);
 
-        header('location: /results');
-
+            return $this->twig->render('Results/results.html.twig', ['van' => $van,]);
         }
         return $this->twig->render('Quizz/quizz.html.twig');
     }
