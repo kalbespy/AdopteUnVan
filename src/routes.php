@@ -10,7 +10,7 @@
 return [
     '' => ['HomeController', 'index',],
     'form' => ['VanController', 'add',],
-    'result' => ['VanController', 'list',],
+    'results' => ['VanController', 'list',],
     'items/edit' => ['ItemController', 'edit', ['id']],
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],

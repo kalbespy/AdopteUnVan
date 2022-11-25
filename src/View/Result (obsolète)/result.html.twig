@@ -1,0 +1,12 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+	<h1>Vous avez un match !</h1>
+
+	<a href="/items/edit?id={{ item.id }}">Edit</a>
+	<form action="/items/delete" method="POST">
+		<input type="hidden" name="id" value="{{ item.id }}">
+		<button>Delete</button>
+	</form>
+	<a href="/items">Back</a>
+{% endblock %}
