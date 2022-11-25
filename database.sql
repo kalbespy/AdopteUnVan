@@ -25,7 +25,7 @@ INSERT INTO van VALUES
 (2, 'Combi VW', false, false, false, false, false, 3, 3, 'assets/images/combi.jpg', 'https://www.wikicampers.fr/annonces-location-camping-car?typeVehicule%5B0%5D=6 ', 'https://www.goboony.fr/location-de-camping-car ', 'link3', "Synonyme de liberté et de voyage, le combi fait rêver les collectionneurs nostalgiques."),
 (3, 'Van sans aménagement', false, false, false, false, false, 3, 2.5, 'assets/images/simplevan.jpg', 'https://www.leboncoin.fr/recherche?category=2&text=Van ', 'https://www.routard.com/forums/t/conseils-achat-fourgon-non-amenage-petit-budget/162892 ', 'link3', "Pour ceux qui n'ont pas besoin de beaucoup de confort."),
 (4, 'Van aménagé', false, false, true, true, true, 3, 3, 'assets/images/campervan.jpg', 'https://www.glenanconceptcars.com/ ', 'https://www.blacksheep-van.com/van-amenage/?gclid=CjwKCAiAyfybBhBKEiwAgtB7flThMRCM8zNESwAczON_N7uzQHD_A3mEDi2OqUNXFV56_saCpt3_BBoCOhEQAvD_BwE ', 'link3', "Le bon compromis entre la voiture et le camping-car."),
-(5, 'Fourgon aménagé', true, true, true, true, true, 5, 3.7, 'assets/images/fourgon.jped', 'https://www.campereve.fr/fourgons_index.php
+(5, 'Fourgon aménagé', true, true, true, true, true, 5, 3.7, 'assets/images/fourgon.jpeg', 'https://www.campereve.fr/fourgons_index.php
 ', 'https://www.campereve.fr/fourgons_index.php
 ', 'link3', "Personnalisez le à votre goût."),
 (6, 'Camping car', true, true, true, true, true, 5, 6.5, 'assets/images/camping_car.jpg', 'https://www.wikicampers.fr/annonces-location-camping-car?geoname=&geonameid=&startDate=&endDate=&typeVehicule%5B%5D=1&budget=0.00-3000.00&length=1200.00&gearbox=', 'https://www.marchi-mobile.com/palazzo-superior/ ', 'link3', "Pour voyager tout confort."),
