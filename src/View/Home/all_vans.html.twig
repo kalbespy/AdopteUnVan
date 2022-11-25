@@ -1,0 +1,66 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+	<section class="container-fluid row gap-3 d-flex justify-content-center">
+		<div class="d-flex justify-content-center">
+			<h1 class="text-center my-5 fs-1 result-h1 fw-bold p-2">Tous les types de vans</h1>
+		</div>
+		{% for van in vans %}
+			<div class="card card-result text-center align-self-center col-sm-12 col-md-6 col-lg-3 p-0">
+				<div class="card-body">
+
+					<h5 class="card-title fs-3 fw-bold">{{van.type}}</h5>
+					<img src="{{van.image}}" class="img-fluid my-2" style="center/cover" alt="image de van">
+					<div>
+						<ul>
+							<li class="fs-4">Nombre de places :
+								{{van.seats}}</li>
+							<li class="fs-4">Longueur :
+								{{van.size}}
+								mètres</li>
+							<li class="fs-4">Nombre de places :
+								{{van.seats}}</li>
+							<li class="fs-4">Douche :
+								{% if van.shower %}
+									oui
+								{% else %}
+									non
+								{% endif %}
+							</li>
+							<li class="fs-4">Cuisine :
+								{% if van.kitchen %}
+									oui
+								{% else %}
+									non
+								{% endif %}
+							</li>
+							<li class="fs-4">Toilettes :
+								{% if van.toilet %}
+									oui
+								{% else %}
+									non
+								{% endif %}
+							</li>
+							<li class="fs-4">Panneau solaire :
+								{% if van.solar_panel %}
+									oui
+								{% else %}
+									non
+								{% endif %}
+
+							</li>
+							<li class="fs-4">Réserve d'eau :
+								{% if van.water_reserve %}
+									oui
+								{% else %}
+									non
+								{% endif %}
+							</li>
+						</ul>
+					</div>
+					<div class="fs-4">{{van.description}}</div>
+				</div>
+			</div>
+		{% endfor %}
+	</section>
+{% endblock %}

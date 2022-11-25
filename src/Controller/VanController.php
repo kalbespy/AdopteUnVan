@@ -276,4 +276,11 @@ class VanController extends AbstractController
         }
         return $this->twig->render('Quizz/quizz.html.twig');
     }
+
+    public function allStars()
+    {
+        $vanManager = new VanManager();
+        $vans = $vanManager->selectAll();
+        return $this->twig->render('Home/all_vans.html.twig', ['vans' => $vans,]);
+    }
 }
