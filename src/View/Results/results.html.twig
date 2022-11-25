@@ -12,20 +12,20 @@
 
 			<div class="card card-result text-center align-self-center">
 				<div class="card-body">
-					<h5 class="card-title fs-3 fw-bold">{{van.type}}</h5>
+					<h5 class="card-title fs-2 fw-bold">{{van.type}}</h5>
 					<img src="{{van.image}}" class="img-fluid my-2" style="center/cover" alt="image de van">
 					<div>
-						<li>
+						<li class="fs-5">
 							<strong>Nombre de places :</strong>
 							{{van.seats}}</li>
-						<li>
+						<li class="fs-5">
 							<strong>Longueur :</strong>
 							{{van.size}}
 							mètres</li>
-						<li>
+						<li class="fs-5">
 							<strong>Nombre de places :</strong>
 							{{van.seats}}</li>
-						<li>
+						<li class="fs-5">
 							<strong>Douche :</strong>
 							{% if van.shower %}
 								oui
@@ -33,7 +33,7 @@
 								non
 							{% endif %}
 						</li>
-						<li>
+						<li class="fs-5">
 							<strong>Cuisine :</strong>
 							{% if van.kitchen %}
 								oui
@@ -41,7 +41,7 @@
 								non
 							{% endif %}
 						</li>
-						<li>
+						<li class="fs-5">
 							<strong>Toilettes :</strong>
 							{% if van.toilet %}
 								oui
@@ -49,7 +49,7 @@
 								non
 							{% endif %}
 						</li>
-						<li>
+						<li class="fs-5">
 							<strong>Panneau solaire :</strong>
 							{% if van.solar_panel %}
 								oui
@@ -57,7 +57,7 @@
 								non
 							{% endif %}
 						</li>
-						<li>
+						<li class="fs-5">
 							<strong>Réserve d'eau :</strong>
 							{% if van.water_reserve %}
 								oui
@@ -68,12 +68,12 @@
 					</ul>
 				</div>
 				<br>
-				<strong>Descritpion :</strong>
-				<div>{{van.description}}</div>
+
+				<div class="fs-5 fw-bold">{{van.description}}</div>
 			</div>
 			<div class="container">
 				<a class="d-flex justify-content-center text-decoration-none" href="">
-					<button class="button-34" role=" button" href=" ">Recommencer</button>
+					<button class="button-34 fs-3 " role=" button" href=" ">Recommencer</button>
 				</a>
 			</div>
 		</div>
@@ -89,14 +89,14 @@
 					<h5 class="card-title fs-3 fw-bold">Ou acheter ou louer ce type de véhicule</h5>
 					<br>
 
-					<li>Site #1
+					<li class="fs-4">Site #1
 						<br>
 						<a href=" {{ van.lien1 }} ">
 							<img src="/assets/images/vanshop1.png" class="logovan" width="60" alt="...">
 						</a>
 					</li>
 					<br>
-					<li>Site #2
+					<li class="fs-4">Site #2
 						<br>
 
 						<a href=" {{ van.lien2 }} ">
@@ -109,15 +109,14 @@
 					<h5 class="card-title fs-3 fw-bold">Information pratiques</h5>
 					<br>
 
-					<li>
+					<li class="fs-5">
 						<strong>Ou se garer</strong>
 						<br>
 						<a href="https://park4night.com/?langage=fr">
 							Park4night</a>
 						<br><br>
 					</li>
-
-					<li>
+					<li class="fs-5">
 						<strong>Se tenir informé:</strong>
 						<br>
 						<a href=" https://www.campingcarlesite.com/camping-car-info">Camping-car: Le site</a>
@@ -125,7 +124,7 @@
 					</li>
 
 
-					<li>
+					<li class="fs-5">
 						<strong>Organiser votre voyage</strong>
 						<br>
 						<a href="https://roadtrippers.com/ ">
@@ -136,5 +135,9 @@
 			</div>
 		</div>
 	</h1>
-
-</div></div></div></div>{% endblock %}
+	<div class="container">
+		<a class="d-flex justify-content-center text-decoration-none" href="/vans">
+			<button class="button-34 fs-3">Voir tous les vans</button>
+		</a>
+	</div>
+</div>{% endblock %}

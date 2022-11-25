@@ -11,7 +11,7 @@ return [
     '' => ['HomeController', 'index',],
     'form' => ['VanController', 'add',],
     'results' => ['VanController', 'result',],
-    'items/edit' => ['ItemController', 'edit', ['id']],
+    'vans' => ['VanController', 'allStars',],
     'quizz' => ['QuizzController', 'index',],
     'show' => ['ResultsController', 'index']
 ];

@@ -9,6 +9,13 @@
 			<h2 class="quizzh1 d-flex justify-content-center p-4 mt-5 mb-5 text-center">
 				Afin de le découvrir, répondez à 5 questions en choisissant l'image qui vous correspond le mieux !
 			</h2>
+			{% if errors %}
+				<div class="d-flex justify-content-center">
+					<h2 class="bg-danger vw-75 error fw-bold d-flex justify-content-center p-4 text-center">{{errors.unset}}
+					</h2>
+				</div>
+			{% endif %}
+
 		</div>
 	</div>
 
