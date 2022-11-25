@@ -162,6 +162,14 @@ ul {
     list-style-type: none;
 }
 
+li {
+    list-style-type: none;
+}
+
+.heart {
+    color: red;
+}
+
 @keyframes slide {
     0% {
         top: 0;
