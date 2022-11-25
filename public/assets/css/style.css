@@ -52,17 +52,12 @@
 }
 
 .button-34 {
-    position: absolute;
-    left: 20%;
-    right: 20%;
-    bottom: 5%;
-    top: 90%;
+    width: 50%;
     background-color: #F8E6D3;
     border-radius: 100px;
     box-shadow: #F8E6D3 0 -25px 18px -14px inset, rgba(3, 6, 4, 0.15) 0 1px 2px, rgba(0, 0, 0, 0.15) 0 2px 4px, rgba(0, 1, 0, 0.15) 0 4px 8px, rgba(3, 4, 4, 0.15) 0 8px 16px, rgba(0, 0, 0, 0.15) 0 16px 32px;
     color: #3B191A;
     cursor: pointer;
-    display: inline-block;
     padding: 7px 20px;
     text-align: center;
     text-decoration: none;
