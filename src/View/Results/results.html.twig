@@ -4,101 +4,136 @@
 
 	<div class="container">
 		<div class="d-flex justify-content-center">
-			<h1 class="text-center my-5 fs-1 result-h1 fw-bold p-2">Vous avez un match ❤ !!</h1>
+			<h1 class="text-center my-5 fs-1 result-h1 fw-bold p-2">Vous avez un match
+				<span class="heart">❤</span>
+				!!</h1>
 		</div>
 		<div class="van-list d-flex justify-content-center flex-direction-column" id="van-list">
 
 			<div class="card card-result text-center align-self-center">
 				<div class="card-body">
-
 					<h5 class="card-title fs-3 fw-bold">{{van.type}}</h5>
 					<img src="{{van.image}}" class="img-fluid my-2" style="center/cover" alt="image de van">
 					<div>
-						<ul>
-							<li>Nombre de places :
-								{{van.seats}}</li>
-							<li>Longueur :
-								{{van.size}}
-								mètres</li>
-							<li>Nombre de places :
-								{{van.seats}}</li>
-							<li>Douche :
-								{% if van.shower %}
-									oui
-								{% else %}
-									non
-								{% endif %}
-							</li>
-							<li>Cuisine :
-								{% if van.kitchen %}
-									oui
-								{% else %}
-									non
-								{% endif %}
-							</li>
-							<li>Toilettes :
-								{% if van.toilet %}
-									oui
-								{% else %}
-									non
-								{% endif %}
-							</li>
-							<li>Panneau solaire :
-								{% if van.solar_panel %}
-									oui
-								{% else %}
-									non
-								{% endif %}
-							</li>
-							<li>Réserve d'eau :
-								{% if van.water_reserve %}
-									oui
-								{% else %}
-									non
-								{% endif %}
-							</li>
-						</ul>
-					</div>
-					<div>{{van.description}}</div>
+						<li>
+							<strong>Nombre de places :</strong>
+							{{van.seats}}</li>
+						<li>
+							<strong>Longueur :</strong>
+							{{van.size}}
+							mètres</li>
+						<li>
+							<strong>Nombre de places :</strong>
+							{{van.seats}}</li>
+						<li>
+							<strong>Douche :</strong>
+							{% if van.shower %}
+								oui
+							{% else %}
+								non
+							{% endif %}
+						</li>
+						<li>
+							<strong>Cuisine :</strong>
+							{% if van.kitchen %}
+								oui
+							{% else %}
+								non
+							{% endif %}
+						</li>
+						<li>
+							<strong>Toilettes :</strong>
+							{% if van.toilet %}
+								oui
+							{% else %}
+								non
+							{% endif %}
+						</li>
+						<li>
+							<strong>Panneau solaire :</strong>
+							{% if van.solar_panel %}
+								oui
+							{% else %}
+								non
+							{% endif %}
+						</li>
+						<li>
+							<strong>Réserve d'eau :</strong>
+							{% if van.water_reserve %}
+								oui
+							{% else %}
+								non
+							{% endif %}
+						</li>
+					</ul>
 				</div>
-				<div class="card-footer">
-					<div>
-						<h1 class="text-center">Pour allez plus loin</h1>
-						<ul>
-							<li>Ou acheter ou louer ce type de véhicule</li>
-							<ul>
-								<li>
-									<a href=" {{ van.lien1 }} ">
-										{{ van.lien1 }}
-									</a>
-								</li>
-								<li>
-									<a href=" {{ van.lien2 }} ">
-										{{ van.lien2 }}</a>
-								</li>
-							</ul>
-
-							<li>Information pratiques</li>
-
-							<ul>
-								<li>Ou se garer
-									<a href="https://park4night.com/?langage=fr">
-										Park4night</a>
-								</li>
-								<li>Se tenir informé:
-									<a href=" https://www.campingcarlesite.com/camping-car-info">Camping-car: Le site</a>
-								</li>
-
-								<li>Organiser votre voyage</li>
-								<a href="https://roadtrippers.com/ ">
-									Roadtrippers</a>
-							</ul>
-						</div>
-					</div>
-				</div>
-
+				<br>
+				<strong>Descritpion :</strong>
+				<div>{{van.description}}</div>
 			</div>
-
 		</div>
+	</div>
 
-	{% endblock %}
+	<div class="container">
+		<div class="d-flex justify-content-center">
+			<h1 class="text-center my-5 fs-1 result-h1 fw-bold p-2">Pour aller plus loin</h1>
+		</div>
+		<div class="van-list d-flex justify-content-center flex-direction-column" id="van-list">
+			<div class="card card-result text-center align-self-center">
+				<div class="card-body">
+					<h5 class="card-title fs-3 fw-bold">Ou acheter ou louer ce type de véhicule</h5>
+					<br>
+
+					<li>Site #1
+						<br>
+						<a href=" {{ van.lien1 }} ">
+							<img src="/assets/images/vanshop1.png" class="logovan" width="60" alt="...">
+						</a>
+					</li>
+					<br>
+					<li>Site #2
+						<br>
+
+						<a href=" {{ van.lien2 }} ">
+							<img src="/assets/images/vanshop2.png" class="logovan" width="60" alt="...">
+						</a>
+					</li>
+					<br><br>
+
+
+					<h5 class="card-title fs-3 fw-bold">Information pratiques</h5>
+					<br>
+
+					<li>
+						<strong>Ou se garer</strong>
+						<br>
+
+						<a href="https://park4night.com/?langage=fr">
+							Park4night</a>
+						<br><br>
+
+					</li>
+					<li>
+						<strong>Se tenir informé:</strong>
+						<br>
+
+						<a href=" https://www.campingcarlesite.com/camping-car-info">Camping-car: Le site</a>
+					</li>
+					<br><br>
+
+
+					<li>
+						<strong>Organiser votre voyage</strong>
+						<br>
+
+						<a href="https://roadtrippers.com/ ">
+							Roadtrippers</a>
+						<br><br>
+
+					</li>
+				</div>
+			</div>
+		</div>
+	</h1>
+
+</div></div></div></div>{% endblock %}
